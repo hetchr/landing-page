@@ -1,0 +1,31 @@
+@import "./global.scss";
+
+nav {
+  position: fixed;
+  width: 48%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    a {
+      font-size: $font_size_nav;
+      color: $black;
+      text-decoration: none;
+    }
+  }
+  img {
+    width: 132px;
+    padding-right: 136px;
+  }
+}

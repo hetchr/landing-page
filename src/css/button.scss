@@ -1,0 +1,14 @@
+@import "./global.scss";
+
+.button_rounded {
+  margin-top: 70px;
+  display: flex;
+  padding: 10px 60px;
+  background-image: linear-gradient(to right, #222a50, #363e63);
+  color: white;
+  justify-content: space-around;
+  border: none;
+  border-radius: 30px;
+  font-size: $font_size_button;
+  cursor: pointer;
+}

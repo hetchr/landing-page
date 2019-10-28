@@ -1,0 +1,30 @@
+@import "./global.scss";
+
+footer {
+  position: fixed;
+  width: 48%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+  margin-top: auto;
+  background: white;
+  font-size: $font_size_nav;
+  left: 0;
+  bottom: 0;
+  ol {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+    li {
+      list-style-type: none;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}

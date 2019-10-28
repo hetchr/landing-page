@@ -1,0 +1,54 @@
+@import "./global.scss";
+
+.article_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 130px 100px;
+
+  h1 {
+    color: $purple;
+    font-size: $font_size_title;
+  }
+  p {
+    color: $black;
+    font-size: $font_size_content;
+  }
+
+  .toggle_container {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      display: flex;
+      width: 100%;
+      font-weight: 500;
+      span {
+        padding: 0px 4px;
+        font-weight: bold;
+      }
+      img {
+        display: flex;
+        align-self: flex-end;
+        margin-left: auto;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    input {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #979797;
+    }
+    textarea {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #979797;
+    }
+  }
+}

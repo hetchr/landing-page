@@ -9,9 +9,221 @@
   </head>
   <body>
     <div class="loader">
-      <img src="/img/hetchr_logo.svg" alt="Hetchr logo" />
+      <div class="loader_container">
+        <img src="/img/hetchr_logo.svg" alt="Hetchr logo" id="main_logo" />
+      </div>
     </div>
-    <section class="main_content">hello my friend</section>
+    <section class="main_content container-left">
+      <nav>
+        <div><img src="/img/hetchr_logo.svg" alt="Hetchr logo" /></div>
+        <ol>
+          <li>
+            <a href="#" rel="noopener noreferrer" onclick="scrollTo('#hetchr')">Hetchr</a>
+          </li>
+          <li>
+            <a href="#" rel="noopener noreferrer" onclick="scrollTo('#developers')">Developers</a>
+          </li>
+          <li>
+            <a href="#" rel="noopener noreferrer" onclick="scrollTo('#companies')">Companies</a>
+          </li>
+          <li>
+            <a href="#" rel="noopener noreferrer" onclick="scrollTo('#contact')">Contact</a>
+          </li>
+        </ol>
+      </nav>
+      <article class="article_container" id="hetchr">
+        <div><img src="/img/hetchr_logo.svg" alt="hetchr logo" /></div>
+        <h1>
+          Developers,<br />
+          discover your new spaces
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div><button class="button_rounded">Pre-launch</button></div>
+      </article>
+      <article class="article_container" id="developers">
+        <h1>For developers</h1>
+        <div class="toggle_container" id="developer_decentralized">
+          <h2 onclick="toggle('developer_decentralized')">
+            <span>Decentralized </span>trackrecord
+            <img src="/img/plus.svg" alt="more open button" />
+          </h2>
+          <p class="no_display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="toggle_container" id="developer_team">
+          <h2 onclick="toggle('developer_team')">
+            Switch your <span>team</span> to <span>ON</span
+            ><img src="/img/plus.svg" alt="more open button" />
+          </h2>
+          <p class="no_display">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="toggle_container" id="developer_gamer">
+          <h2 onclick="toggle('developer_gamer')">
+            Gamified <span>experience</span
+            ><img src="/img/plus.svg" alt="more open button" />
+          </h2>
+          <p class="no_display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="toggle_container" id="developer_report">
+          <h2 onclick="toggle('developer_report')">
+            Automated <span>reports</span
+            ><img src="/img/plus.svg" alt="more open button" />
+          </h2>
+          <p class="no_display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="toggle_container" id="developer_bonus">
+          <h2 onclick="toggle('developer_bonus')">
+            Bonus, saving and <span>more</span
+            ><img src="/img/plus.svg" alt="more open button" />
+          </h2>
+          <p class="no_display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div><button class="button_rounded">Pre-launch</button></div>
+      </article>
+      <article class="article_container" id="companies">
+        <h1>For companies</h1>
+        <div class="toggle_container" id="companie_decentralized">
+          <h2 onclick="toggle('companie_decentralized')">
+            <span>Decentralized </span>trackrecord
+            <img src="/img/plus.svg" alt="more open button" />
+          </h2>
+          <p class="no_display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="toggle_container" id="companie_team">
+          <h2 onclick="toggle('companie_team')">
+            Switch your <span>team</span> to <span>ON</span
+            ><img src="/img/plus.svg" alt="more open button" />
+          </h2>
+          <p class="no_display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="toggle_container" id="companie_game">
+          <h2 onclick="toggle('companie_game')">
+            Gamified <span>experience</span
+            ><img src="/img/plus.svg" alt="more open button" />
+          </h2>
+          <p class="no_display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="toggle_container" id="companie_report">
+          <h2 onclick="toggle('companie_report')">
+            Automated <span>reports</span
+            ><img src="/img/plus.svg" alt="more open button" />
+          </h2>
+          <p class="no_display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="toggle_container" id="companie_bonus">
+          <h2 onclick="toggle('companie_bonus')">
+            Bonus, saving and <span>more</span
+            ><img src="/img/plus.svg" alt="more open button" />
+          </h2>
+          <p class="no_display">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div><button class="button_rounded">Pre-launch</button></div>
+      </article>
+      <article class="article_container" id="contact">
+        <h1>Thrilled to hear from you</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco.
+        </p>
+        <form action="">
+          <input type="text" placeholder="Last name" />
+          <input type="text" placeholder="Reason" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Tell your story here."
+          ></textarea>
+          <div><button class="button_rounded"">Submit</button></div>
+        </form>
+        <div><button class="button_rounded"">Pre-launch</button></div>
+      </article>
+      <footer>
+        <ol>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="/img/linkedin_link.svg" alt="linkedin link"
+            /></a>
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="/img/medium_link.svg" alt="medium link"
+            /></a>
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="/img/twitter_link.svg" alt="twitter link"
+            /></a>
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >About us</a
+            >
+          </li>
+        </ol>
+        <div>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img src="" alt=""
+          /></a>
+        </div>
+      </footer>
+    </section>
     <section class="main_content"></section>
   </body>
   <script src="./dist/bundle.min.js"></script>
