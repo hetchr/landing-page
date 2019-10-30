@@ -1,8 +1,8 @@
 @import "./global.scss";
 
 .button_rounded {
-  margin-top: 70px;
   display: flex;
+  margin: 30px 0;
   padding: 10px 60px;
   background-image: linear-gradient(to right, #222a50, #363e63);
   color: white;
@@ -11,4 +11,9 @@
   border-radius: 30px;
   font-size: $font_size_button;
   cursor: pointer;
+}
+
+.button_orange {
+  background-color: #ffc172;
+  background-image: none;
 }

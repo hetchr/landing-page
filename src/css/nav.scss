@@ -2,7 +2,7 @@
 
 nav {
   position: fixed;
-  width: 48%;
+  width: 48.8%;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -12,7 +12,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex: 1;
+    width: 55%;
   }
   li {
     display: flex;
@@ -20,12 +20,43 @@ nav {
     text-decoration: none;
     a {
       font-size: $font_size_nav;
-      color: $black;
+      color: #9c9c9c;
       text-decoration: none;
     }
   }
   img {
     width: 132px;
-    padding-right: 136px;
+    margin-left: 50px;
+  }
+
+  .selected {
+    color: $purple;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    width: 100%;
+    box-shadow: 2px 0 3px 0 rgba(0, 0, 0, 0.5);
+    ol {
+      width: 80%;
+    }
+  }
+}
+
+.nav_black {
+  background-image: linear-gradient(to top, #11181d, #212748 -2%);
+  color: none;
+  ol {
+    li {
+      a {
+        color: #eaeaea;
+      }
+    }
+  }
+
+  .selected {
+    color: #ffc172;
   }
 }

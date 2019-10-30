@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hetchr</title>
   </head>
-  <body>
+  <body onload="canvasDraw()">
     <div class="loader">
+      <canvas id="loader_canvas"></canvas>
       <div class="loader_container">
-        <img src="/img/hetchr_logo.svg" alt="Hetchr logo" id="main_logo" />
+          <img src="/img/hetchr_logo.svg" alt="Hetchr logo" id="main_logo" />
       </div>
     </div>
-    <section class="main_content container-left">
+    <section class="main_content container_left">
       <nav>
-        <div><img src="/img/hetchr_logo.svg" alt="Hetchr logo" /></div>
+        <div><img src="/img/hetchr_logo.svg" alt="Hetchr logo" onclick="scrollAnchor('#hetchr', 0)" id="nav_logo"/></div>
         <ol>
           <li>
-            <a href="#" rel="noopener noreferrer" onclick="scrollTo('#hetchr')">Hetchr</a>
+            <a href="#" id="hetchrLink" rel="noopener noreferrer" onclick="scrollAnchor('#hetchr', 0)">Hetchr</a>
           </li>
           <li>
-            <a href="#" rel="noopener noreferrer" onclick="scrollTo('#developers')">Developers</a>
+            <a href="#developers" id="developersLink" rel="noopener noreferrer" onclick="scrollAnchor('#developers', 1)">Developers</a>
           </li>
           <li>
-            <a href="#" rel="noopener noreferrer" onclick="scrollTo('#companies')">Companies</a>
+            <a href="#companies" id="companiesLink" rel="noopener noreferrer" onclick="scrollAnchor('#companies', 2)">Companies</a>
           </li>
           <li>
-            <a href="#" rel="noopener noreferrer" onclick="scrollTo('#contact')">Contact</a>
+            <a href="#contact" id="contactLink" rel="noopener noreferrer" onclick="scrollAnchor('#contact', 3)">Contact</a>
           </li>
         </ol>
       </nav>
       <article class="article_container" id="hetchr">
-        <div><img src="/img/hetchr_logo.svg" alt="hetchr logo" /></div>
+        <div><img src="/img/hetchr_logo.svg" alt="hetchr logo" id="hetchr_main_logo"/></div>
         <h1>
           Developers,<br />
           discover your new spaces
@@ -46,18 +47,25 @@
         <div><button class="button_rounded">Pre-launch</button></div>
       </article>
       <article class="article_container" id="developers">
-        <h1>For developers</h1>
+        <h1>For developers <img src="/img/astronaut_head.svg" alt="astronaut"></h1>
         <div class="toggle_container" id="developer_decentralized">
           <h2 onclick="toggle('developer_decentralized')">
             <span>Decentralized </span>trackrecord
             <img src="/img/plus.svg" alt="more open button" />
           </h2>
-          <p class="no_display">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+          <div class="no_display">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </p>
+            <ol class="tools_list">
+              <li><img src="/img/jira.svg" alt="jira"></li>
+              <li><img src="/img/git.svg" alt="git"></li>
+              <li><img src="/img/github.svg" alt="github"></li>
+            </ol>
+          </div>
         </div>
         <div class="toggle_container" id="developer_team">
           <h2 onclick="toggle('developer_team')">
@@ -109,8 +117,8 @@
         </div>
         <div><button class="button_rounded">Pre-launch</button></div>
       </article>
-      <article class="article_container" id="companies">
-        <h1>For companies</h1>
+      <article class="article_container companie_color" id="companies">
+        <h1>For companies <img src="/img/satellite.png" alt=""></h1>
         <div class="toggle_container" id="companie_decentralized">
           <h2 onclick="toggle('companie_decentralized')">
             <span>Decentralized </span>trackrecord
@@ -171,7 +179,7 @@
             aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div><button class="button_rounded">Pre-launch</button></div>
+        <div><button class="button_rounded button_orange">Pre-launch</button></div>
       </article>
       <article class="article_container" id="contact">
         <h1>Thrilled to hear from you</h1>
@@ -224,7 +232,10 @@
         </div>
       </footer>
     </section>
-    <section class="main_content"></section>
+    <section class="main_content container_img" id="container_img_fade">
+      <div class="animate " id="container_img"></div>
+      <img src="" id="animatedBg" alt="cool screen">
+    </section>
   </body>
   <script src="./dist/bundle.min.js"></script>
 </html>

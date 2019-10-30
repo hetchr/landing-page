@@ -35,6 +35,17 @@ module.exports = {
         options: {
           attrs: ["img:src"]
         }
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "ttf-loader",
+            options: {
+              name: "[name].[ext]"
+            }
+          }
+        ]
       }
     ]
   },
@@ -49,6 +60,9 @@ module.exports = {
         root: path.resolve(__dirname, "src")
       }
     }),
-    new CopyWebpackPlugin([{ from: "src/img", to: "img" }])
+    new CopyWebpackPlugin([
+      { from: "src/img", to: "img" },
+      { from: "src/font", to: "font" }
+    ])
   ]
 };

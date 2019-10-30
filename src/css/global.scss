@@ -5,3 +5,12 @@ $font_size_content: 21px;
 $font_size_nav: 18px;
 $purple: #222a50;
 $black: #1c1c1c;
+$main_font: HelveticaNeue, sans-serif;
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("/font/HelveticaNeueBold.ttf") format("ttf"),
+    url("/font/HelveticaNeue.ttf") format("ttf"),
+    url("/font/HelveticaNeueBd.ttf") format("ttf"),
+    url("/font/HelveticaNeueLight.ttf") format("ttf");
+}
