@@ -39,5 +39,14 @@ footer {
 .footer_black {
   background-image: linear-gradient(to top, #11181d, #212748 -2%);
   background-color: none;
-  color: grey !important;
+  ol {
+    li {
+      a {
+        color: white;
+        svg {
+          fill: white;
+        }
+      }
+    }
+  }
 }

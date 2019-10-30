@@ -1,0 +1,64 @@
+.shrink_animation {
+  animation: shrink 40s infinite;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes space_ship {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+.helmet {
+  mix-blend-mode: multiply;
+  position: absolute;
+  height: 600px;
+  bottom: 0;
+  right: -100px;
+}
+
+.animate {
+  width: 110%;
+  height: 110%;
+  background-position: center;
+  background-size: cover;
+}
+
+.astronaut {
+  position: absolute;
+  height: 400px;
+  bottom: 0;
+  left: 10%;
+}
+
+.space_shuttle {
+  position: absolute;
+  height: 600px;
+  bottom: 0;
+  left: -100px;
+}
+
+.space_ship {
+  position: absolute;
+  height: 300px;
+  bottom: 50px;
+  right: 50px;
+  animation: space_ship 5s infinite;
+}
