@@ -3,7 +3,7 @@ export function canvasDraw() {
   const ctx = canvas.getContext("2d");
   canvas.width = getWidth();
   canvas.height = getHeight();
-  // createGradient(ctx);
+  createGradient(ctx);
   drawStar(ctx);
 }
 
@@ -17,8 +17,8 @@ function getHeight() {
 
 function createGradient(ctx) {
   const gradient = ctx.createLinearGradient(0, 1000, 1100, 0);
-  gradient.addColorStop(0, "#130c41");
-  gradient.addColorStop(1, "#001616");
+  gradient.addColorStop(0, "#FFFFFF");
+  gradient.addColorStop(1, "#FFFFFF");
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, getWidth(), getHeight());
 }

@@ -9,6 +9,7 @@ import * as Animation from "./js/animation";
 import * as CanvasLoader from "./js/loaderCanvas";
 import * as ImgViewer from "./js/imgViewer";
 import * as Global from "./js/global";
+import * as Mailer from "./js/mailer";
 $(window).on("load", () => {
   Animation.setBg(Global.store.currentAnchorIdx);
   Animation.setSelectedLink(Global.store.linkList[0]);
@@ -34,3 +35,4 @@ $(window).on("beforeunload", function() {
 window.scrollAnchor = Animation.scrollAnchor;
 window.toggle = Animation.toggle;
 window.canvasDraw = CanvasLoader.canvasDraw;
+window.mailTo = Mailer.mailTo;
