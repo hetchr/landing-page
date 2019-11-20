@@ -22,7 +22,9 @@ body {
 
 @media (max-width: 1024px) {
   .container_left {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
+    box-shadow: none;
   }
   .container_img {
     display: none !important;

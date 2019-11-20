@@ -45,6 +45,16 @@ nav {
   }
 }
 
+@media (max-width: 425px) {
+  nav {
+    width: 100%;
+    box-shadow: none;
+    ol {
+      display: none;
+    }
+  }
+}
+
 .nav_black {
   background-image: linear-gradient(to top, #11181d, #212748 -2%);
   color: none;

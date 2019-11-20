@@ -30,6 +30,7 @@
       width: 100%;
       font-weight: 500;
       color: $purple;
+      align-items: center;
       cursor: pointer;
       span {
         padding: 0px 0px;
@@ -77,6 +78,28 @@
   }
 }
 
+.for_mobile {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: none;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.home_parallax {
+  background-image: url("/img/hetchr_bg.png");
+}
+
+.dev_parallax {
+  background-image: url("/img/dev_bg.png");
+}
+
+.companie_parallax {
+  background-image: url("/img/companie_bg.png");
+}
+
 .companie_color {
   background-image: linear-gradient(to top, #11181d, #212748 -2%);
   h1,
@@ -87,6 +110,28 @@
 }
 
 #hetchr_main_logo {
-  padding-top: 70px;
+  padding-top: 150px;
   padding-bottom: 30px;
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .for_mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  #hetchr_main_logo {
+    padding-top: 50px;
+  }
+  .article_container {
+    padding: 10px 30px 80px 30px;
+
+    .toggle_container {
+      h2 {
+        font-size: $font_size_nav;
+      }
+    }
+  }
 }

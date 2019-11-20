@@ -41,6 +41,15 @@ footer {
   }
 }
 
+@media (max-width: 425px) {
+  footer {
+    width: 100%;
+    ol {
+      padding-left: 30px;
+    }
+  }
+}
+
 .footer_black {
   background-image: linear-gradient(to top, #11181d, #212748 -2%);
   background-color: none;
