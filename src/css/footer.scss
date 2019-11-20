@@ -15,7 +15,7 @@ footer {
   ol {
     width: 50%;
     padding: 0;
-    padding-left: 50px;
+    padding-left: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,6 +27,11 @@ footer {
   a {
     text-decoration: none;
     color: $black;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
   }
 }
 

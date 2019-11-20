@@ -3,7 +3,7 @@
 .button_rounded {
   display: flex;
   margin: 20px 0;
-  padding: 10px 60px;
+  padding: 10px 30px;
   background-image: linear-gradient(to right, #222a50, #363e63);
   color: white;
   justify-content: space-around;
@@ -19,6 +19,9 @@
 }
 
 .button_orange {
-  background-color: #ffc172;
+  background-color: white;
   background-image: none;
+  a {
+    color: $purple;
+  }
 }

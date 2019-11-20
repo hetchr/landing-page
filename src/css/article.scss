@@ -3,7 +3,7 @@
 .article_container {
   display: flex;
   flex-direction: column;
-  padding: 100px 80px;
+  padding: 80px 80px;
   min-height: 80vh;
 
   h1 {
@@ -30,8 +30,9 @@
       width: 100%;
       font-weight: 500;
       color: $purple;
+      cursor: pointer;
       span {
-        padding: 0px 4px;
+        padding: 0px 0px;
         font-weight: bold;
       }
       img {
@@ -59,6 +60,9 @@
       padding: 10px;
       border-radius: 10px;
       border: 1px solid #979797;
+      &:focus {
+        outline: none;
+      }
     }
     textarea {
       margin-top: 10px;
@@ -66,6 +70,9 @@
       border-radius: 10px;
       border: 1px solid #979797;
       height: 170px;
+      &:focus {
+        outline: none;
+      }
     }
   }
 }

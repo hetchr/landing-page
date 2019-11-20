@@ -23,15 +23,10 @@ export function toggle(id) {
 
 export function setBg(idx) {
   $("#container_img_fade").fadeOut("slow", () => {
-    $("#container_img").removeClass("shrink_animation");
     $("#container_img").css({
       "background-image": "url(" + Global.store.imgList[idx].bg + ")"
     });
-    $("#animatedBg").removeClass();
-    $("#animatedBg").attr("src", Global.store.imgList[idx].img);
-    $("#animatedBg").addClass(Global.store.imgList[idx].class);
     $("#container_img_fade").fadeIn("slow");
-    $("#container_img").addClass("shrink_animation");
   });
 }
 
@@ -98,14 +93,23 @@ export function setFootTheme() {
   ) {
     Global.store.currentFootTheme = 1;
     $("footer").addClass("footer_black");
+    $("#linkedin").attr("src", "/img/linkedin.png");
+    $("#medium").attr("src", "/img/medium.png");
+    $("#twitter").attr("src", "/img/twitter.png");
   }
   if (cTop > top && Global.store.currentFootTheme === 1) {
     Global.store.currentFootTheme = 0;
     $("footer").removeClass("footer_black");
+    $("#linkedin").attr("src", "/img/linkedin_purple.png");
+    $("#medium").attr("src", "/img/medium_purple.png");
+    $("#twitter").attr("src", "/img/twitter_purple.png");
   }
   if (cBottom < top && Global.store.currentFootTheme === 1) {
     Global.store.currentFootTheme = 0;
     $("footer").removeClass("footer_black");
+    $("#linkedin").attr("src", "/img/linkedin_purple.png");
+    $("#medium").attr("src", "/img/medium_purple.png");
+    $("#twitter").attr("src", "/img/twitter_purple.png");
   }
 }
 
