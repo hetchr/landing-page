@@ -3,7 +3,7 @@
 .article_container {
   display: flex;
   flex-direction: column;
-  padding: 80px 80px;
+  padding: 100px 80px;
   min-height: 80vh;
 
   h1 {
@@ -89,15 +89,15 @@
 }
 
 .home_parallax {
-  background-image: url("/img/hetchr_bg.png");
+  background-image: url("/img/hetchr_bg.jpg");
 }
 
 .dev_parallax {
-  background-image: url("/img/dev_bg.png");
+  background-image: url("/img/dev_bg.jpg");
 }
 
 .companie_parallax {
-  background-image: url("/img/companie_bg.png");
+  background-image: url("/img/companie_bg.jpg");
 }
 
 .companie_color {

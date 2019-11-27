@@ -7,15 +7,15 @@ let store = {
     "#contactLink"
   ],
   imgList: [
-    { bg: "/img/hetchr_bg.png", img: "/img/astronaut.png", class: "astronaut" },
-    { bg: "/img/dev_bg.png", img: "/img/astro_helmet.png", class: "helmet" },
+    { bg: "/img/hetchr_bg.jpg", img: "/img/astronaut.png", class: "astronaut" },
+    { bg: "/img/dev_bg.jpg", img: "/img/astro_helmet.png", class: "helmet" },
     {
-      bg: "/img/companie_bg.png",
+      bg: "/img/companie_bg.jpg",
       img: "/img/space_shuttle.svg",
       class: "space_shuttle"
     },
     {
-      bg: "/img/contact_bg.png",
+      bg: "/img/contact_bg.jpg",
       img: "/img/space_ship.png",
       class: "space_ship"
     }
